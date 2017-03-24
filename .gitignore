@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/java,android
+# Created by https://www.gitignore.io/api/android,gradle
 
 ### Android ###
 # Built application files
@@ -35,12 +35,14 @@ proguard/
 
 # Android Studio captures folder
 captures/
-.idea/
+
 # Intellij
 *.iml
+.idea/
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/gradle.xml
+.idea/dictionaries
 .idea/libraries
 
 # Keystore files
@@ -52,7 +54,7 @@ captures/
 # Google Services (e.g. APIs or Firebase)
 google-services.json
 
-#Freeline
+# Freeline
 freeline.py
 freeline/
 freeline_project_description.json
@@ -60,20 +62,20 @@ freeline_project_description.json
 ### Android Patch ###
 gen-external-apklibs
 
-### Java ###
+### Gradle ###
+.gradle
+/build/
 
-# BlueJ files
-*.ctxt
+# Ignore Gradle GUI config
+gradle-app.setting
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Cache of project
+.gradletasknamecache
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
 
-# End of https://www.gitignore.io/api/java,android
+# End of https://www.gitignore.io/api/android,gradle
